@@ -297,3 +297,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.976453
 wait(1.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1.143537163734436, 10491.5615234375, -3521.690673828125)
 end)
+
+local mod = main:Button("STOP", function()
+game.Players.LocalPlayer.Character.Torso:Destroy()
+end)
