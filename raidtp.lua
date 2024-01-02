@@ -88,7 +88,27 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 wait(5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1271.617431640625, 21.566131591796875, -60.854515075683594)
-wait(5)
+wait(1770)
+
+        end
+end)
+local mod = main:Button("LOBBY TP", function()
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "\3",
+            [2] = "Teleport",
+            [3] = "To",
+            [4] = "Lobby"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+local mod = main:Button("EGG GHOUL", function()
+wait(0.5)
 local args = {
     [1] = {
         [1] = {
@@ -105,24 +125,6 @@ local args = {
             [4] = "AutoOpening",
             [5] = true,
             [6] = "Ghoul Chest"
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
-
-wait(1765)
-
-        end
-end)
-local mod = main:Button("LOBBY TP", function()
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "\3",
-            [2] = "Teleport",
-            [3] = "To",
-            [4] = "Lobby"
         }
     }
 }
