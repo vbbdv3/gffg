@@ -110,8 +110,30 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "\3",
+            [2] = "Pets",
+            [3] = "Open",
+            [4] = "Ghoul Chest",
+            [5] = "All"
+        },
+        [2] = {
+            [1] = "\3",
+            [2] = "AFK",
+            [3] = "Set",
+            [4] = "AutoOpening",
+            [5] = true,
+            [6] = "Ghoul Chest"
+        }
+    }
+}
 
-wait(1769)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+wait(1768)
 
         end
 end)
