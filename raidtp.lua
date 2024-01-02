@@ -4,6 +4,7 @@ end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
 local main = libary:CreateWindow("RAIDS")
 local mod = main:Button("START", function()
+while true do wait(1781)
 local args = {
     [1] = {
         [1] = {
@@ -15,7 +16,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
-wait(0.5)
+wait(1)
 local args = {
     [1] = {
         [1] = {
@@ -60,6 +61,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2608.695
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2564.9228515625, 2832.14208984375, 7121.92724609375)
 wait(1)
+        end
 end)
 local mod = main:Button("LOBBY TP", function()
 local args = {
