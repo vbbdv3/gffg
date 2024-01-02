@@ -61,6 +61,19 @@ wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2564.9228515625, 2832.14208984375, 7121.92724609375)
 wait(1)
 end)
-local mod = main:Button("NEXT SERVER", function()
+local mod = main:Button("LOBBY TP", function()
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "\3",
+            [2] = "Teleport",
+            [3] = "To",
+            [4] = "Lobby"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
 end)
 
