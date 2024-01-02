@@ -107,29 +107,3 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 
 end)
-local mod = main:Button("EGG GHOUL", function()
-wait(0.5)
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "\3",
-            [2] = "Pets",
-            [3] = "Open",
-            [4] = "Ghoul Chest",
-            [5] = "All"
-        },
-        [2] = {
-            [1] = "\3",
-            [2] = "AFK",
-            [3] = "Set",
-            [4] = "AutoOpening",
-            [5] = true,
-            [6] = "Ghoul Chest"
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
-
-end)
-
