@@ -9,6 +9,30 @@ local args = {
     [1] = {
         [1] = {
             [1] = "\3",
+            [2] = "Dungeon",
+            [3] = "Leave"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "\3",
+            [2] = "Dungeon",
+            [3] = "Leave"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "\3",
             [2] = "Raid",
             [3] = "Join"
         }
@@ -88,7 +112,7 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 wait(5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1271.617431640625, 21.566131591796875, -60.854515075683594)
-wait(1770)
+wait(1768)
 
         end
 end)
@@ -107,3 +131,4 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 
 end)
+
