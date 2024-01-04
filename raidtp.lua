@@ -84,6 +84,17 @@ wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2608.69580078125, 2832.141357421875, 7116.05029296875)
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2564.9228515625, 2832.14208984375, 7121.92724609375)
+wait(1)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2559.81884765625, 2832.14013671875, 7060.63623046875)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2510.676513671875, 2832.141845703125, 7115.962890625)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2562.3486328125, 2832.142333984375, 7178.28662109375)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2608.69580078125, 2832.141357421875, 7116.05029296875)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2564.9228515625, 2832.14208984375, 7121.92724609375)
 wait(5)
 local args = {
     [1] = {
@@ -112,7 +123,7 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 wait(5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1271.617431640625, 21.566131591796875, -60.854515075683594)
-wait(1768)
+wait(1763)
 
         end
 end)
