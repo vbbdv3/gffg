@@ -77,7 +77,7 @@ end)
 
 local main = libary:CreateWindow("INV")
 
-local mod = main:Button("KEY", function()
+local mod = main:Button("5 MINUTE KEY", function()
 asd = true
 spawn(function()
     task.wait(300)
@@ -96,5 +96,27 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3894.00
 wait(0.6)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3912.245361328125, 12.314525604248047, 1848.0338134765625)
 wait(0.6)
+end
+end)
+
+local mod = main:Button("5 MINUTE TP", function()
+asd = true
+spawn(function()
+    task.wait(300)
+    asd = false
+end)
+while asd do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4117.9365234375, 2708.8740234375, 1887.01904296875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4152.31884765625, 2708.8740234375, 1869.2576904296875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4143.767578125, 2708.872314453125, 1827.9483642578125)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4143.767578125, 2708.872314453125, 1827.9483642578125)
+wait(1.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4162.45361328125, 2708.8740234375, 1907.631103515625)
+wait(1.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4203.14990234375, 2708.8740234375, 1891.6748046875)
+wait(2.4)
 end
 end)
