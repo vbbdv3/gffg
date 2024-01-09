@@ -78,10 +78,10 @@ wait(0.6)
 end
 end)
 
-local mod = main:Button("3 MINUTE TP", function()
+local mod = main:Button("4 MINUTE TP", function()
 asd = true
 spawn(function()
-    task.wait(90)
+    task.wait(120)
     asd = false
 end)
 while asd do
