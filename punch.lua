@@ -99,3 +99,31 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4203.14
 wait(2.4)
 end
 end)
+
+local mod = main:Button("JOIN", function()
+local args = {
+    [1] = "Enemies",
+    [2] = "Bridge",
+    [3] = {
+        ["Module"] = "InvasionShip",
+        ["FunctionName"] = "Start",
+        ["Args"] = "Friend"
+    }
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+
+
+
+end)
+
+
+local mod = main:Button("STOP", function()
+local args = {
+    [1] = "Teleport",
+    [2] = "Spawn",
+    [3] = "Clown Island"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+end)
