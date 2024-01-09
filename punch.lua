@@ -3,9 +3,9 @@ while not game:IsLoaded() do
     wait()
 end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("KILL FARM")
+local main = libary:CreateWindow("RAID")
 
-local mod = main:Button("START", function()
+local mod = main:Button("START 5 MINUT FARM", function()
 asd = true
 spawn(function()
     task.wait(300)
@@ -27,11 +27,28 @@ wait(0.6)
 end
   end)
 
-local mod = main:Button("TP", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(139.5328826904297, 14.703206062316895, 1545.9603271484375)
+local mod = main:Button("JOIN", function()
+local args = {
+    [1] = "Enemies",
+    [2] = "Bridge",
+    [3] = {
+        ["Module"] = "Raid",
+        ["FunctionName"] = "Start",
+        ["Args"] = "Friend"
+    }
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+
 end)
 
 
 local mod = main:Button("STOP", function()
-game.Players.LocalPlayer.Character.Torso:Destroy()
+local args = {
+    [1] = "Teleport",
+    [2] = "Spawn",
+    [3] = "Desert Piece"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 end)
