@@ -113,7 +113,7 @@ local args = {
             [1] = "\3",
             [2] = "Teleport",
             [3] = "To",
-            [4] = 7
+            [4] = 9
         }
     }
 }
@@ -126,14 +126,14 @@ local args = {
             [1] = "\3",
             [2] = "Teleport",
             [3] = "To",
-            [4] = 7
+            [4] = 9
         }
     }
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 wait(5)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1616.6048583984375, 21.560741424560547, -61.87552261352539)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1976.5361328125, 21.378047943115234, -35.49794006347656)
 wait(1758)
 
         end
