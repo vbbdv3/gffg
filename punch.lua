@@ -148,6 +148,7 @@ asd = true
 spawn(function()
     task.wait(300)
     asd = false
+end)
 while asd do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3892.120849609375, 20.230531692504883, -424.9251708984375)
 wait(0.6)
