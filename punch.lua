@@ -66,6 +66,16 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 end)
 
+local mod = main:Button("STOP V2", function()
+local args = {
+    [1] = "Teleport",
+    [2] = "Spawn",
+    [3] = "Desert Piece"
+}
+
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+end)
+
 local main = libary:CreateWindow("INV")
 
 local mod = main:Button("5 MINUTE KEY", function()
