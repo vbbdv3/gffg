@@ -6,6 +6,7 @@ local main = libary:CreateWindow("RAID")
 
 
 local mod = main:Button("Leaf City", function()
+while true do wait()
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -14,10 +15,7 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(86.68048095703125, 24.783470153808594, -355.07989501953125)
-  end)
-
-
-local mod = main:Button("Desert Piece", function()
+wait(4)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -26,10 +24,7 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99.69157409667969, 15.669350624084473, 1660.6109619140625)
-  end)
-
-
-local mod = main:Button("Slayer Village", function()
+wait(4)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -38,10 +33,7 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1896.015380859375, 25.725433349609375, -600.3231811523438)
-  end)
-
-
-local mod = main:Button("Cursed Academy", function()
+wait(4)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -50,10 +42,7 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1623.7503662109375, 30.190229415893555, 1519.7879638671875)
-  end)
-
-
-local mod = main:Button("Dragon City", function()
+wait(4)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -62,10 +51,7 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(662.9125366210938, 16.184741973876953, -2410.34326171875)
-  end)
-
-
-local mod = main:Button("Bizarre Island", function()
+wait(4)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -74,10 +60,7 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1459.8668212890625, 25.460847854614258, -2350.547607421875)
-  end)
-
-
-local mod = main:Button("Clown Island", function()
+wait(14)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -86,10 +69,7 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3869.074462890625, 15.069072723388672, 2050.291259765625)
-  end)
-
-
-local mod = main:Button("Clover Village", function()
+wait(134)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -98,10 +78,7 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3937.554443359375, 15.436572074890137, -598.6962280273438)
-  end)
-
-
-local mod = main:Button("Hunter Island", function()
+wait(4)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -110,6 +87,8 @@ local args = {
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4169.56298828125, 16.108144760131836, -2713.361083984375)
+wait(720)
+        end
   end)
 
 
