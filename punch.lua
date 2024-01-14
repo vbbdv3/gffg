@@ -69,8 +69,7 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 end)
 
 local mod = main:Button("STOP V2", function()
-while true do wait()
-
+while true do wait(300)
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -78,7 +77,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
-wait(300)
         end
 end)
 
