@@ -69,6 +69,7 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 end)
 
 local mod = main:Button("STOP V2", function()
+while true do wait()
 local args = {
     [1] = "Teleport",
     [2] = "Spawn",
@@ -76,6 +77,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+        end
 end)
 
 local main = libary:CreateWindow("INV")
