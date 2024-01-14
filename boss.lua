@@ -86,6 +86,13 @@ local args = {
 }
 game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
+local args = {
+    [1] = "Teleport",
+    [2] = "Spawn",
+    [3] = "Clover Village"
+}
+game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
+wait(1)
 -- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4169.56298828125, 16.108144760131836, -2713.361083984375)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3765.240478515625, 13.087101936340332, -364.0730285644531)
 
