@@ -8,7 +8,7 @@ local main = libary:CreateWindow("RAID")
 local mod = main:Button("GRIM", function()
 asd = true
 spawn(function()
-    task.wait(300)
+    task.wait(999999)
     asd = false
 end)
 while asd do
