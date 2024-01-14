@@ -87,7 +87,7 @@ local main = libary:CreateWindow("INV")
 local mod = main:Button("5 MINUTE KEY", function()
 asd = true
 spawn(function()
-    task.wait(300)
+    task.wait(999999)
     asd = false
 end)
 while asd do
