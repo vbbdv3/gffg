@@ -205,6 +205,6 @@ game:GetService("ReplicatedStorage").Bridge:FireServer(unpack(args))
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3765.240478515625, 13.087101936340332, -364.0730285644531)
 wait(720)
-
+        end
   end)
 
