@@ -6,12 +6,7 @@ local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true
 local main = libary:CreateWindow("RAID")
 
 local mod = main:Button("1 world", function()
-asd = true
-spawn(function()
-    task.wait(999999)
-    asd = false
-end)
-while asd do
+while true do wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-69.03377532958984, 23.499998092651367, -920.8756713867188)
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(27.583518981933594, 23.49999237060547, -920.5889282226562)
