@@ -187,16 +187,6 @@ end)
 
 local mod = main:Button("CURSES", function()
 while true do wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-86.82636260986328, 23.4999942779541, 440.14337158203125)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-117.7680435180664, 24.4999942779541, 381.62603759765625)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-45.413021087646484, 23.499998092651367, 362.2159118652344)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.91251754760742, 23.4999942779541, 319.9952392578125)
-wait(0.2)
-
-
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(46.021766662597656, 23.4999942779541, 370.4514465332031)
 wait(0.2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(35.930850982666016, 23.4999942779541, 447.4233093261719)
