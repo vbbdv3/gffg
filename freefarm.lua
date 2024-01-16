@@ -186,6 +186,35 @@ end
 end)
 
 local mod = main:Button("CURSES", function()
+while true do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-86.82636260986328, 23.4999942779541, 440.14337158203125)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-117.7680435180664, 24.4999942779541, 381.62603759765625)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-45.413021087646484, 23.499998092651367, 362.2159118652344)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.91251754760742, 23.4999942779541, 319.9952392578125)
+wait(0.2)
+
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(46.021766662597656, 23.4999942779541, 370.4514465332031)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(35.930850982666016, 23.4999942779541, 447.4233093261719)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(68.83247375488281, 24.499998092651367, 479.3040771484375)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.16389083862305, 23.4999942779541, 507.3663330078125)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-88.67394256591797, 23.4999942779541, 506.1675720214844)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-26.21645164489746, 23.499996185302734, 543.064453125)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-27.342220306396484, 85.31717681884766, 431.417724609375)
+wait(0.2)
+end
+end)
+
+local mod = main:Button("CURSES", function()
 asd = true
 spawn(function()
     task.wait(60)
