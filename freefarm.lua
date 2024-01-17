@@ -204,6 +204,21 @@ wait(0.2)
 end
 end)
 
+local mod = main:Button("DNA", function()
+while true do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.340719223022461, 23.700008392333984, 958.2447509765625)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12.635712623596191, 23.500001907348633, 991.186279296875)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(62.08220672607422, 23.700008392333984, 947.3515625)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22.727121353149414, 23.500001907348633, 924.4199829101562)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-27.342220306396484, 85.31717681884766, 431.417724609375)
+wait(0.2)
+end
+end)
+
 local mod = main:Button("CURSES", function()
 asd = true
 spawn(function()
