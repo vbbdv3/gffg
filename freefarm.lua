@@ -247,3 +247,13 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.To_Server:FireServer(unpack(args))
+
+
+local mod = main:Button("DNA", function()
+while true do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115.78327178955078, 84.03251647949219, 1211.76806640625)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-27.37363052368164, 23.700008392333984, 1243.15576171875)
+wait(0.2)
+end
+end)
