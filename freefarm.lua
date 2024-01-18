@@ -224,6 +224,15 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.To_Server:FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = {
+        ["Action"] = "Gacha_Activate",
+        ["Name"] = "Hats_1"
+    }
+}
+
+game:GetService("ReplicatedStorage").Events.To_Server:FireServer(unpack(args))
 end
 end)
 
