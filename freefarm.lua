@@ -143,15 +143,15 @@ end)
 local mod = main:Button("SWORD HAT", function()
 while true do wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-27.353229522705078, 23.827592849731445, 121.64151000976562) -- KEY 7.5%
-wait(0.2)
+wait(0.4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(117.05305480957031, 30.827606201171875, 120.32081604003906) -- KEY 10%
-wait(0.2)
+wait(0.4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(123.09404754638672, 4.5, 648.5602416992188) -- KEY 10%
-wait(0.2)
+wait(0.4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115.38968658447266, 84.05653381347656, 1211.1280517578125) -- BLUE 10%
-wait(0.2)
+wait(0.4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-23.77351951599121, 23.700008392333984, 1241.2410888671875) -- BLUE 7.5%
-wait(0.2)
+wait(0.4)
 end
 end)
 
