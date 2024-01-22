@@ -126,14 +126,14 @@ local args = {
             [1] = "\3",
             [2] = "Teleport",
             [3] = "To",
-            [4] = 9
+            [4] = 10
         }
     }
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 wait(5)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1976.5361328125, 21.378047943115234, -35.49794006347656)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2347.417236328125, 21.28410530090332, -61.59473419189453)
 wait(1758)
 
         end
@@ -152,5 +152,38 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 
+end)
+
+local mod = main:Button("EGG", function()
+while true do wait()
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "\3",
+            [2] = "Pets",
+            [3] = "Open",
+            [4] = "Titan Chest",
+            [5] = "All"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(0.5)
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "\3",
+            [2] = "Pets",
+            [3] = "Open",
+            [4] = "Titan Chest",
+            [5] = "All"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(0.5)
+end
 end)
 
