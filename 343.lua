@@ -1,5 +1,5 @@
 local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace._ENEMIES["10"]
+local enemies_folder = workspace._ENEMIES["9"]
 local target;
 
 function getClosestEnemy()
@@ -10,7 +10,7 @@ function getClosestEnemy()
         for _, enemy in pairs(enemies_folder:GetChildren()) do
             local enemy_part = enemy:FindFirstChild('HumanoidRootPart')
             local enemy_distance = enemy_part and (enemy_part.Position - rootPart.Position).Magnitude
-            local enemy_health = enemy:FindFirstChild('Humanoid') and enemy.Humanoid.Health
+            local enemy_health = enemy._STATS.CurrentHP
             if enemy_distance and enemy_distance < result_distance and enemy_health and enemy_health > 0 then
                 result = enemy
                 result_distance = enemy_distance
@@ -27,8 +27,7 @@ while task.wait() do
             not target or
             not target.Parent or
             not target:FindFirstChild('HumanoidRootPart') or
-            not target:FindFirstChild('Humanoid') or
-            target.Humanoid.Health <= 0
+            target._STATS.CurrentHP <= 0
         then
             target = getClosestEnemy()
         end
