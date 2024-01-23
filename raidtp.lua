@@ -138,6 +138,7 @@ wait(1758)
 
         end
 end)
+
 local mod = main:Button("LOBBY TP", function()
 local args = {
     [1] = {
@@ -151,11 +152,12 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
-
 end)
 
-local mod = main:Button("EGG", function()
-while true do wait()
+local mod = main:Button("TITAN EGG", function()
+_G.titan_enabled = not _G.titan_enabled
+
+while _G.titan_enabled do
 local args = {
     [1] = {
         [1] = {
@@ -167,23 +169,23 @@ local args = {
         }
     }
 }
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
-wait(0.5)
-local args = {
-    [1] = {
-        [1] = {
-            [1] = "\3",
-            [2] = "Pets",
-            [3] = "Open",
-            [4] = "Titan Chest",
-            [5] = "All"
-        }
-    }
-}
-
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 wait(0.5)
 end
+end)
+
+local mod = main:Button("DUNGEON TP", function()
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "\3",
+            [2] = "Dungeon",
+            [3] = "Join",
+            [4] = "Easy"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 end)
 
