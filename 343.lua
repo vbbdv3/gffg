@@ -1,5 +1,7 @@
+_G.enabled = not _G.enabled
+
 local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace._ENEMIES["9"]
+local enemies_folder = workspace._ENEMIES.Defense
 local target;
 
 function getClosestEnemy()
@@ -20,7 +22,7 @@ function getClosestEnemy()
     return result, result_distance
 end
 
-while task.wait() do
+while task.wait() and _G.enabled do
     local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
     if rootPart then
         if
