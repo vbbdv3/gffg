@@ -6,16 +6,10 @@ local main = libary:CreateWindow("AUTO DEFENSE")
 
 local mod = main:Button("START/STOP", function()
 
-speed = 50
-
-local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace._ENEMIES["10"]
-local target;
-_G.Defense_enabled = not _G.Defense_enabled
-
 local lplr = game.Players.LocalPlayer
 local enemies_folder = workspace._ENEMIES.Defense
 local target;
+_G.Defense_enabled = not _G.Defense_enabled
 
 function getClosestEnemy()
     local result;
