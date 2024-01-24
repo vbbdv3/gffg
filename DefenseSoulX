@@ -7,7 +7,7 @@ local main = libary:CreateWindow("AUTO DEFENSE")
 local mod = main:Button("START/STOP", function()
 
 local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace._ENEMIES.Defense
+local enemies_folder = workspace._ENEMIES["1"]
 local target;
 _G.Defense_enabled = not _G.Defense_enabled
 
