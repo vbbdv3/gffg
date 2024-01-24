@@ -2,13 +2,19 @@ while not game:IsLoaded() do
     wait()
 end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("KILL FARM")
+local main = libary:CreateWindow("AUTO DEFENSE")
 
-local mod = main:Button("START", function()
-_G.enabled = not _G.enabled
+local mod = main:Button("START/STOP", function()
+
+speed = 50
 
 local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace._ENEMIES["1"]
+local enemies_folder = workspace._ENEMIES["10"]
+local target;
+_G.Defense_enabled = not _G.Defense_enabled
+
+local lplr = game.Players.LocalPlayer
+local enemies_folder = workspace._ENEMIES.Defense
 local target;
 
 function getClosestEnemy()
@@ -29,7 +35,7 @@ function getClosestEnemy()
     return result, result_distance
 end
 
-while task.wait() and _G.enabled do
+while task.wait() and _G.Defense_enabled do
     local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
     if rootPart then
         if
