@@ -9,7 +9,7 @@ local mod = main:Button("1", function()
 local lplr = game.Players.LocalPlayer
 local enemies_folder = workspace._ENEMIES["1"]
 local target;
-_G.1_enabled = not _G.1_enabled
+_G.a_enabled = not _G.a_enabled
 
 function getClosestEnemy()
     local result;
@@ -29,7 +29,7 @@ function getClosestEnemy()
     return result, result_distance
 end
 
-while task.wait() and _G.1_enabled do
+while task.wait() and _G.a_enabled do
     local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
     if rootPart then
         if
@@ -50,9 +50,9 @@ end)
 
 
 local mod = main:Button("2", function()
-_G.2_join_enabled = not _G.2_join_enabled
+_G.b_join_enabled = not _G.b_join_enabled
 
-while _G.2_join_enabled do
+while _G.b_join_enabled do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(781.9603881835938, 21.5970516204834, -84.23210906982422)
 wait(0.33)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(781.830322265625, 21.597030639648438, -10.164302825927734)
