@@ -2,70 +2,8 @@ while not game:IsLoaded() do
     wait()
 end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
-local main = libary:CreateWindow("AUTO")
+local main = libary:CreateWindow("DefenseSoul")
 
 local mod = main:Button("1", function()
-
-local lplr = game.Players.LocalPlayer
-local enemies_folder = workspace._ENEMIES["1"]
-local target;
-_G.a_enabled = not _G.a_enabled
-
-function getClosestEnemy()
-    local result;
-    local result_distance = math.huge
-    local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
-    if rootPart then
-        for _, enemy in pairs(enemies_folder:GetChildren()) do
-            local enemy_part = enemy:FindFirstChild('HumanoidRootPart')
-            local enemy_distance = enemy_part and (enemy_part.Position - rootPart.Position).Magnitude
-            local enemy_health = enemy._STATS.CurrentHP.Value
-            if enemy_distance and enemy_distance < result_distance and enemy_health and enemy_health > 0 then
-                result = enemy
-                result_distance = enemy_distance
-            end
-        end
-    end
-    return result, result_distance
-end
-
-while task.wait() and _G.a_enabled do
-    local rootPart = lplr.Character and lplr.Character:FindFirstChild('HumanoidRootPart')
-    if rootPart then
-        if
-            not target or
-            not target.Parent or
-            not target:FindFirstChild('HumanoidRootPart') or
-            target._STATS.CurrentHP.Value <= 0
-        then
-            target = getClosestEnemy()
-        end
-        local target_part = target and target:FindFirstChild('HumanoidRootPart')
-        if target_part then
-            rootPart.CFrame = target_part.CFrame
-        end
-    end
-end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(230.9435272216797, 1068.359130859375, 4611.69580078125)
 end)
-
-
-local mod = main:Button("2", function()
-_G.b_join_enabled = not _G.b_join_enabled
-
-while _G.b_join_enabled do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(781.9603881835938, 21.5970516204834, -84.23210906982422)
-wait(0.33)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(781.830322265625, 21.597030639648438, -10.164302825927734)
-wait(0.33)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(733.6080932617188, 21.008224487304688, -72.71790313720703)
-wait(0.33)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(726.5171508789062, 21.008224487304688, -104.49222564697266)
-wait(0.33)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(638.416748046875, 21.15822410583496, -126.33839416503906)
-wait(0.33)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(624.6343994140625, 21.308223724365234, -197.12078857421875)
-wait(0.33)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(633.8425903320312, 21.008155822753906, -76.62374877929688)
-wait(0.33)
-end
-  end)
