@@ -1,0 +1,13 @@
+while not game:IsLoaded() do
+    wait()
+end
+local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
+local main = libary:CreateWindow("DefenseSoul")
+
+local mod = main:Button("Remove Crystal", function()
+game:GetService("Workspace")["_AREAS"].Defense.ManaCrystal:Destroy()
+end)
+
+local mod = main:Button("Teleport to center", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(230.9435272216797, 1068.359130859375, 4611.69580078125)
+end)
