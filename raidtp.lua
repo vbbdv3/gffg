@@ -154,7 +154,7 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
 end)
 
-local mod = main:Button("TITAN EGG", function()
+local mod = main:Button("Cyborg Chest", function()
 _G.titan_enabled = not _G.titan_enabled
 
 while _G.titan_enabled do
@@ -164,7 +164,7 @@ local args = {
             [1] = "\3",
             [2] = "Pets",
             [3] = "Open",
-            [4] = "Ciborg Chest",
+            [4] = "Cyborg Chest",
             [5] = "All"
         }
     }
