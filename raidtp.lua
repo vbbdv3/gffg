@@ -164,7 +164,7 @@ local args = {
             [1] = "\3",
             [2] = "Pets",
             [3] = "Open",
-            [4] = "Titan Chest",
+            [4] = "Ciborg Chest",
             [5] = "All"
         }
     }
