@@ -4,16 +4,10 @@ end
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
 local main = libary:CreateWindow("DefenseSoul")
 
-local mod = main:Button("START", function()
-_G.Dungeon_join_enabled = not _G.Dungeon_join_enabled
-
-while _G.Dungeon_join_enabled do
-
-
+local mod = main:Button("CRYSTAL DELET", function()
 game:GetService("Workspace")["_AREAS"].Defense.ManaCrystal:Destroy()
 end)
-wait()
+
+local mod = main:Button("TP", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(230.9435272216797, 1068.359130859375, 4611.69580078125)
-wait(3)
-end
 end)
